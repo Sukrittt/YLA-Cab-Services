@@ -1,0 +1,436 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+  }
+  ::-webkit-scrollbar{
+    width : .85em;
+}
+
+::-webkit-scrollbar-track{
+    background: hsl(0, 0%, 12%);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 100vw;
+    background: hsl(0, 0%, 67%);
+    border: 2px solid black;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: hsl(0, 0%, 44%);
+}
+  .navbar{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #0f0f0f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+  }
+  .navbar-brand{
+    font-size: 2em;
+    letter-spacing: .1em;
+  }
+  .container-fluid{
+    margin-top: 1em;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .nav-item{
+    font-size: 1.3em;
+    flex-direction: column;
+    gap: 0em;
+  }
+  .container-fluid a{
+    color: white;
+    transition: color 300ms;
+  }
+  .container-fluid a:hover{
+    color: #2f6c8d;
+  }
+  .nav-link{
+    text-align: center;
+  }
+  .toggler-icon{
+    color:white;
+    position: absolute;
+    left: .75em;
+    top: 1.75em;
+  }
+  #collapse-items{
+    display: none;
+  }
+  #sign-up{
+    border-radius: 10px;
+    color: #2f6c8d;
+    font-weight: 600;
+  }
+
+/* Media Query Code For Navbar*/
+    @media screen and (min-width: 300px){
+        .toggler-icon{
+            top: 1.55em;
+        }
+        .toggler-icon svg{
+            height: 25px;
+        }
+        .navbar-brand{
+            font-size: 1.25em;
+            margin-left: 1em;
+        }
+        .nav-item{
+            font-size: 1em;
+        }
+        .cab-description p{
+            margin-top: 1.5em;
+            max-width: 40em;
+        }
+      }
+      @media screen and (min-width: 835px){
+        .navbar-brand{
+            position: relative;
+            font-size: 1.45em;
+            top: -.3em;
+        }
+        .toggler-icon{
+            display: none;
+        }
+        #collapse-items{
+            display: flex;
+            flex-direction: row;
+        }
+        .container-fluid{
+            flex-direction: row;
+        }
+        .nav-item{
+            display: flex !important;
+            flex-direction: row;
+            margin-bottom: .3em;
+            gap: 2.5em;
+        }
+      }
+      @media screen and (min-width: 991px){
+        .nav-item{
+            display: flex !important;
+            flex-direction: row;
+            margin-bottom: .75em;
+            font-size: 1em;
+            gap: 2.25em;
+        }
+      }
+      @media screen and (min-width: 1200px){
+        .navbar-brand{
+            font-size: 1.65em;
+        }
+        .nav-item{
+            display: flex !important;
+            flex-direction: row;
+            margin-bottom: .75em;
+            font-size: 1.3em;
+            gap: 2.25em;
+        }
+      }
+      @media screen and (min-width: 1500px){
+        .navbar-brand{
+            font-size: 1.8em;
+        }
+        .nav-item{
+            display: flex !important;
+            flex-direction: row;
+            margin-bottom: .75em;
+            font-size: 1.5em;
+            gap: 2.25em;
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /*Footer*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    background-color: #033651;
+    color:white;
+    padding: 2em;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.col span{
+    font-size: .8em;
+}
+.col :first-child{
+    font-size: 1.5em;
+}
+.column-three a{
+    text-decoration: none;
+    color:white;
+    font-size: .8em;
+    transition: color 300ms;
+}
+.social-icons{
+    transition: color 300ms;
+}
+.social-icons:hover,.column-three a:hover{
+    color: #2f6c8d;
+}
+
+.twitter,.instagram{
+    align-self: center;
+}
+.copywright{
+    font-size: 0.8em;
+    background-color: #033651;
+    color:white;
+    padding-bottom: 2em;
+}
+
+
+/*Section*/
+.section-one{
+    margin-top: 10em;
+}
+.why-statement{
+    color:gray;
+    font-size: .9em;
+}
+.grid-one{
+ background-color: #033651;
+ color:white;
+ padding: 1em;   
+}
+.grid-two{
+ background-color: white;
+ color:#033651;
+ padding: 1em;   
+}
+.grid-three{
+ background-color: #033651;
+ color: white;
+ padding: 1em;   
+}
+.grid-four{
+ background-color: white;
+ color:#033651;
+ padding: 1em;   
+}
+.special-grid{
+    border-bottom: 5px solid white;
+}
+.grid{
+    opacity: 0;
+    transition: 1s;
+}
+.grid-two{
+    transition-delay: 500ms;
+}
+.grid-three{
+    transition-delay: 1s;
+}
+.grid-four{
+    transition-delay: 1.5s;
+}
+.grid[data-scroll="in"]{
+    opacity: 1;
+}
+
+
+/*Media Query code for Section*/
+@media screen and (min-width: 300px) {
+    .why{
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+    .grid-flexbox{
+        flex-direction: column;
+        padding: 2em 0;
+        padding-left: .5em;
+        gap: 1em;
+    }
+    .grid-flexbox img{
+        align-self: center;
+    }
+    .special-grid{
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+    .image-explanation{
+        margin-top: 2em;
+    }
+    .image-subheading{
+        font-size: .8em;
+    }
+    .image-subheading-odd{
+        font-size: .8em
+    }
+    .image-heading{
+        color:black;
+        font-weight: 600;
+        font-size: 1.1em;
+    }
+    .image-heading-odd{
+        color:white;
+        font-weight: 600;
+        font-size: 1.1em;
+    }
+}
+@media screen and (min-width: 500px) {
+    .why{
+        font-size: 2.5em;
+    }
+    .why-statement{
+        font-size: 1.1em;
+    }
+    .grid-flexbox{
+        flex-direction: row;
+        gap: 1em;
+    }
+}
+@media screen and (min-width: 750px) {
+    .special-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .image-heading,.image-heading-odd{
+        font-size: .85em;
+    }
+    .grid-one{
+        background-color: white;
+        color: #033651;
+        padding: 1em;   
+       }
+       .grid-two{
+        background-color: #033651;
+        color:white;
+        padding: 1em;   
+       }
+       .grid-three{
+        background-color: #033651;
+        color: white;
+        padding: 1em;   
+       }
+       .grid-four{
+        background-color: white;
+        color: #033651;
+        padding: 1em;   
+       }
+       .one,.four{
+        color:#033651;
+    }
+        .two,.three{
+        color:white;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .grid-one,.grid-three,.grid-two,.grid-four{
+        padding-bottom: 7em;
+        margin: auto;
+    }
+    .image-heading,.image-heading-odd{
+        font-size: 1.2em;
+    }
+    .why{
+        font-size: 3em;
+    }
+    .why-statement{
+        font-size: 1.3em;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .image-heading,.image-heading-odd{
+        font-size: 1.5em;
+    }
+    .image-subheading,.image-subheading-odd{
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query Code for Footer*/
+@media screen and (min-width: 500px) {
+    .col :first-child{
+        font-size: 1.85em;
+    }
+    .col span,.column-three a{
+        font-size: .9em;
+    }
+}
+@media screen and (min-width: 800px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media screen and (min-width: 1000px) {
+    .link :first-child{
+        font-size: 1.4em !important;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .link{
+        flex-direction: column !important;
+        gap: .5em !important;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .footer{
+        gap: 4em;
+    }
+    .facebook svg,.twitter svg,.instagram svg{
+        height: 28px;
+        width: 28px;
+    }
+    .col span,.column-three a,.copywright{
+        font-size: 1.2em;
+    }
+    .col :first-child{
+        font-size: 2.25em;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .col span,.column-three a,.copywright{
+        font-size: 1.25em;
+    }
+    .link :first-child{
+        font-size: 1.5em !important;
+    }
+    .col :first-child{
+        font-size: 3em;
+    }
+}
