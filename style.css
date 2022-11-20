@@ -232,6 +232,7 @@ body{
         .service-description span{
             display: block;
             text-align: center;
+            margin-top: 5em;
         }
   }
   @media screen and (min-width:500px){
