@@ -18,3 +18,10 @@ document.getElementById("main").addEventListener("click", function (e) {
     document.getElementById("collapse-items").style.display = "none";
   }
 });
+
+// When scrolled
+document.addEventListener("scroll", function (e) {
+  if (document.getElementById("collapse-items").style.display == "flex") {
+    document.getElementById("collapse-items").style.display = "none";
+  }
+});
