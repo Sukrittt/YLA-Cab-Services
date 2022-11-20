@@ -210,8 +210,17 @@ body{
 
 
 /*Section*/
+.background{
+    background-color: #0f0f0f;
+    color: white;
+    padding-top: 5em;
+    padding-bottom: 4em;
+}
 .section-one{
-    margin-top: 10em;
+    margin-top: 6.35em;
+}
+.special-grid{
+    margin-top: -.85em !important;
 }
 .why-statement{
     color:gray;
@@ -297,6 +306,9 @@ body{
         font-weight: 600;
         font-size: 1.1em;
     }
+    .section-one{
+        margin-top: 4em;
+    }
 }
 @media screen and (min-width: 500px) {
     .why{
@@ -366,6 +378,12 @@ body{
     }
     .image-subheading,.image-subheading-odd{
         font-size: 1em;
+    }
+    .section-one{
+        margin-top: 6em;
+    }
+    .special-grid{
+        margin-top: 0;
     }
 }
 
