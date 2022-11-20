@@ -14,7 +14,6 @@ document.getElementById("toggler-icon").addEventListener("click", function (e) {
 
 // When Clicked outside of nav links
 document.getElementById("main").addEventListener("click", function (e) {
-  console.log("clicked");
   if (document.getElementById("collapse-items").style.display == "flex") {
     document.getElementById("collapse-items").style.display = "none";
   }
