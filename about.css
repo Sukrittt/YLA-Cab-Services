@@ -59,9 +59,41 @@ body{
   .toggler-icon{
     color:white;
     position: absolute;
-    left: .75em;
+    left: -5.75em;
     top: 1.75em;
   }
+  /*Hamburger Animation*/
+  .button-one{
+    --button-color: whitesmoke
+  }
+.button-one .ham{
+    transition: 
+        y 300ms ease-in 300ms,
+        rotate 300ms ease-in,
+        opacity 0ms 300ms
+    ;
+    transform-origin: center;
+}
+.button-one[aria-expanded="true"] .ham{
+    transition: 
+        y 300ms ease-in,
+        rotate 300ms ease-in 300ms,
+        opacity 0ms 300ms
+    ;
+}
+
+.button-one[aria-expanded="true"] :is(.top,.bottom){
+    y: 45; 
+}
+.button-one[aria-expanded="true"] .top{
+    rotate: 45deg;
+}
+.button-one[aria-expanded="true"] .middle{
+    opacity: 0;
+}
+.button-one[aria-expanded="true"] .bottom{
+    rotate: -45deg;
+}
   #collapse-items{
     display: none;
   }
