@@ -1,12 +1,16 @@
 // When clicked on the toggle icon
 document.getElementById("toggler-icon").addEventListener("click", function (e) {
+  const button = document.querySelector(".button-one");
+  const buttonState = button.getAttribute("aria-expanded");
   if (
     document.getElementById("collapse-items").style.display == "" ||
     document.getElementById("collapse-items").style.display == "none"
   ) {
     document.getElementById("collapse-items").style.display = "flex";
+    button.setAttribute("aria-expanded", "true");
   } else {
     document.getElementById("collapse-items").style.display = "none";
+    button.setAttribute("aria-expanded", "false");
   }
 });
 
